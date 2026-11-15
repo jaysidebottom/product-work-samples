@@ -1,0 +1,27 @@
+{
+    servers {
+        timeouts {
+            read_header 10s
+            read_body 20s
+            write 30s
+            idle 60s
+        }
+    }
+}
+marketplace.example.com {
+    route {
+        basic_auth {
+            demo {$DEMO_PASSWORD_HASH}
+        }
+        request_body {
+            max_size 120000
+        }
+        reverse_proxy 127.0.0.1:8766 {
+            header_up -Authorization
+            transport http {
+                dial_timeout 3s
+                response_header_timeout 15s
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "host": "<server-tailscale-ip>",
+  "host_key_alias": "<original-pinned-server-ip>",
+  "url": "https://<server>.<tailnet>.ts.net",
+  "owner": "<tailscale-login>",
+  "device_ipv4": "<authorized-mac-tailscale-ip>",
+  "device_ipv6": "<authorized-mac-tailscale-ipv6>"
+}

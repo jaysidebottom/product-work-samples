@@ -1,0 +1,13 @@
+[Unit]
+Description=Consistent Marketplace database backup
+After=marketplace.service
+[Service]
+Type=oneshot
+User=marketplace
+Group=marketplace
+UMask=0077
+ExecStart=/usr/bin/python3 /opt/marketplace/current/deploy/backup.py
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/marketplace

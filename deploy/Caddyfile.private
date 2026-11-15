@@ -1,0 +1,47 @@
+# Serve is the only network entry to this loopback listener.
+# Identity and exact device IP are checked before the unchanged demo password.
+{
+    auto_https off
+    servers {
+        timeouts {
+            read_header 10s
+            read_body 20s
+            write 30s
+            idle 60s
+        }
+    }
+}
+:8767 {
+    bind 127.0.0.1
+    @owner {
+        remote_ip 127.0.0.1
+        header Tailscale-User-Login {$MARKETPLACE_OWNER}
+        expression `{http.request.header.X-Forwarded-For} == '{$MARKETPLACE_DEVICE_IPV4}' || {http.request.header.X-Forwarded-For} == '{$MARKETPLACE_DEVICE_IPV6}'`
+    }
+    handle @owner {
+        route {
+            header {
+                Strict-Transport-Security "max-age=86400"
+                Referrer-Policy "no-referrer"
+                -Server
+            }
+            basic_auth {
+                demo {$DEMO_PASSWORD_HASH}
+            }
+            request_body {
+                max_size 120000
+            }
+            reverse_proxy 127.0.0.1:8766 {
+                header_up -Authorization
+                header_down -Server
+                transport http {
+                    dial_timeout 3s
+                    response_header_timeout 15s
+                }
+            }
+        }
+    }
+    handle {
+        respond "Access denied" 403
+    }
+}

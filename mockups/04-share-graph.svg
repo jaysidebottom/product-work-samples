@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100">
+<rect width="1440" height="1100" fill="#f3f6fa"/>
+<text x="40" y="43" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#51647d" font-weight="700">ANALYST ASSISTANT  /  CONCEPT DESIGN</text>
+<text x="40" y="82" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#142842" font-weight="700">04  Share a graph with useful context</text>
+<text x="40" y="115" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#51647d" font-weight="400">Refine a draft through conversation, review its audience, then explicitly confirm sharing.</text>
+<rect x="40" y="145" width="1360" height="730" rx="12" fill="#fff" stroke="#cdd6e2"/>
+<rect x="40" y="145" width="814" height="61" rx="12" fill="#142842" stroke="#142842"/>
+<rect x="866" y="145" width="534" height="61" rx="12" fill="#142842" stroke="#142842"/>
+<rect x="65" y="157" width="150" height="37" rx="7" fill="#203b59" stroke="#627995"/>
+<text x="140" y="175.5" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#fff">‹ Investigations</text>
+<text x="235" y="183" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#fff" font-weight="700">example.com</text>
+<text x="570" y="181" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d9e6ff" font-weight="400">Illustrative data · Concept mockup</text>
+<text x="890" y="183" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#fff" font-weight="700">Assistant</text>
+<text x="1275" y="181" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#d9e6ff" font-weight="400">Collapse ‹</text>
+<text x="65" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#244fdd" font-weight="700">Graph</text>
+<text x="139" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#263449" font-weight="400">Table</text>
+<text x="209" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#263449" font-weight="400">Sources</text>
+<path d="M 860 206 V 874" stroke="#b9c8dc" stroke-width="3"/>
+<rect x="856" y="512" width="8" height="55" rx="4" fill="#dce3eb" stroke="#dce3eb"/>
+<text x="890" y="239" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#51647d" font-weight="600">Conversation</text>
+<rect x="880" y="260" width="500" height="48" rx="10" fill="#f3f6fa" stroke="#dce3eb"/>
+<text x="897" y="290" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#263449" font-weight="400">Context: example.com · Last 30 days</text>
+<text x="57" y="1076" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#51647d" font-weight="400">Concept only • Fictional data and collaborators • Chat controls are illustrative • No working analyst implementation claimed</text>
+<rect x="65" y="265" width="770" height="310" rx="10" fill="#f8faff" stroke="#dce3eb"/>
+<line x1="235" y1="410" x2="450" y2="370" stroke="#4778de" stroke-width="4"/>
+<line x1="450" y1="370" x2="660" y2="460" stroke="#4778de" stroke-width="4"/>
+<circle cx="235" cy="410" r="28" fill="#e5edff" stroke="#244fdd" stroke-width="3"/>
+<text x="170" y="467" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#142842" font-weight="600">example.com</text>
+<circle cx="450" cy="370" r="28" fill="#e5edff" stroke="#244fdd" stroke-width="3"/>
+<text x="385" y="427" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#142842" font-weight="600">192.0.2.10</text>
+<circle cx="660" cy="460" r="28" fill="#e5edff" stroke="#244fdd" stroke-width="3"/>
+<text x="595" y="517" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#142842" font-weight="600">related.example</text>
+<text x="81" y="291" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#51647d" font-weight="400">Selected: 3 nodes · 2 relationships</text>
+<text x="344" y="330" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#51647d" font-weight="400">Shared IP · DNS observations</text>
+<text x="85" y="623" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#142842" font-weight="700">Saved view</text>
+<text x="85" y="658" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#51647d" font-weight="400">3 nodes · 2 relationships · Time filter: 15 Oct–14 Nov 2026</text>
+<text x="85" y="685" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#51647d" font-weight="400">Snapshot: 14 Nov 2026, 15:05 UTC · DNS records DNS-101 / DNS-102</text>
+<circle cx="811" cy="623" r="15" fill="#244fdd"/>
+<text x="806" y="628" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="700">1</text>
+<rect x="930" y="325" width="440" height="83" rx="15" fill="#eef2f8" stroke="#eef2f8"/>
+<text x="947" y="347" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#51647d" font-weight="600">You</text>
+<text x="947" y="372" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#263449" font-weight="400">Share this graph and finding with Analyst Lee.</text>
+<circle cx="902" cy="438" r="12" fill="#142842"/>
+<text x="897" y="443" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="700">a</text>
+<text x="924" y="443" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#142842" font-weight="700">Assistant</text>
+<text x="895" y="480" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#142842" font-weight="700">Here’s a draft to review before sharing</text>
+<rect x="890" y="497" width="480" height="211" rx="10" fill="#f8faff" stroke="#dce3eb"/>
+<text x="905" y="522" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#142842" font-weight="700">Shared IP observed for example.com</text>
+<text x="905" y="549" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#263449" font-weight="400">example.com and related.example were observed</text>
+<text x="905" y="571" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#263449" font-weight="400">at 192.0.2.10. Shared IP does not establish ownership.</text>
+<text x="905" y="598" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#2457d9" font-weight="600">[1] DNS-101</text>
+<path d="M 905 601 h 75.46" stroke="#2457d9" stroke-width="1"/>
+<text x="1017" y="598" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#2457d9" font-weight="600">[2] DNS-102</text>
+<path d="M 1017 601 h 75.46" stroke="#2457d9" stroke-width="1"/>
+<text x="1237" y="598" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#2457d9" font-weight="600">Edit finding</text>
+<path d="M 1237 601 h 82.32" stroke="#2457d9" stroke-width="1"/>
+<text x="905" y="627" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#715323" font-weight="400">Coverage caveat: certificate enrichment failed.</text>
+<text x="905" y="655" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#142842" font-weight="600">Recipient: Analyst Lee</text>
+<text x="1250" y="655" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#2457d9" font-weight="600">Change</text>
+<path d="M 1250 658 h 41.16" stroke="#2457d9" stroke-width="1"/>
+<text x="905" y="681" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#247257" font-weight="400">Access checked · All evidence available</text>
+<text x="905" y="699" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#51647d" font-weight="400">Graph + saved view + finding · Raw chat excluded</text>
+<rect x="895" y="726" width="100" height="38" rx="7" fill="#fff" stroke="#cdd6e2"/>
+<text x="945.0" y="745" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#263449">Cancel</text>
+<rect x="1010" y="726" width="170" height="38" rx="7" fill="#244fdd" stroke="#244fdd"/>
+<text x="1095.0" y="745" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#fff">Confirm share</text>
+<path d="M 880 776 H 1380" stroke="#e5eaf1"/>
+<rect x="890" y="790" width="480" height="63" rx="16" fill="#f8fafc" stroke="#b9c8dc"/>
+<text x="907" y="827" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#5b6d84" font-weight="400">Revise the finding or change its recipients…</text>
+<circle cx="1342" cy="823" r="17" fill="#142842"/>
+<path d="M 1342 831 V 815 M 1336 821 L 1342 815 L 1348 821" fill="none" stroke="#fff" stroke-width="2"/>
+<text x="915" y="865" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#718096" font-weight="400">Enter to send · Shift+Enter for a new line</text>
+<circle cx="1378" cy="653" r="15" fill="#244fdd"/>
+<text x="1373" y="658" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="700">2</text>
+<circle cx="1378" cy="784" r="15" fill="#244fdd"/>
+<text x="1373" y="789" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="700">3</text>
+<circle cx="65" cy="928" r="15" fill="#244fdd"/>
+<text x="60" y="933" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="700">1</text>
+<text x="90" y="934" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#172b4d" font-weight="700">Share the graph and context</text>
+<text x="90" y="963" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4d6079" font-weight="400">Recipients open the saved view and graph,</text>
+<text x="90" y="986" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4d6079" font-weight="400">inspect evidence, and continue exploration.</text>
+<circle cx="530" cy="928" r="15" fill="#244fdd"/>
+<text x="525" y="933" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="700">2</text>
+<text x="555" y="934" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#172b4d" font-weight="700">Clickable review controls</text>
+<text x="555" y="963" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4d6079" font-weight="400">Edit the finding or choose recipients in chat.</text>
+<text x="555" y="986" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4d6079" font-weight="400">Block sharing if any evidence is restricted.</text>
+<circle cx="995" cy="928" r="15" fill="#244fdd"/>
+<text x="990" y="933" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" font-weight="700">3</text>
+<text x="1020" y="934" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#172b4d" font-weight="700">Chat can revise, not bypass</text>
+<text x="1020" y="963" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4d6079" font-weight="400">Typed revisions update the draft and checks.</text>
+<text x="1020" y="986" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#4d6079" font-weight="400">Sharing still requires explicit confirmation.</text>
+</svg>

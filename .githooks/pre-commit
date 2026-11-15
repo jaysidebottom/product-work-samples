@@ -1,0 +1,3 @@
+#!/bin/sh
+set -eu
+python3 scripts/audit-secrets.py "$(git rev-parse --show-toplevel)"
