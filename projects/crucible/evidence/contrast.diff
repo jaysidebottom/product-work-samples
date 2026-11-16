@@ -1,0 +1,10 @@
+--- baseline-prompt.md
++++ contrast-prompt.md
+@@ -32,4 +32,3 @@
+-- **Python** (expert): FastAPI, Flask, mitmproxy, asyncio, cryptography, matrix-nio
+-- **TypeScript/Node.js** (proficient): Node.js, Express, MCP SDK
+-- **Go** (intermediate): gorilla/websocket, x/crypto
+-
++- **Python** (expert): FastAPI middleware work requires documenting the ordering sequence (authentication → validation → logging → business logic) before writing code. Flask for simpler sequential pipelines. Apply asyncio for concurrent workflow stages; cryptography at auth boundaries; matrix-nio for event-sourced architectures.
++- **TypeScript/Node.js** (proficient): Express requires writing the request/response pipeline sequence specification before implementing handlers. Enforce middleware ordering constraints throughout.
++- **Go** (intermediate): gorilla/websocket requires explicit connection lifecycle stage sequencing before implementation. Apply x/crypto at the designated auth boundary only.

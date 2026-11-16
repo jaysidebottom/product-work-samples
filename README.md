@@ -1,6 +1,17 @@
-# Controlled Marketplace and Analyst Assistant
+# Product Management Work Samples
 
-Product design and engineering examples by Jeffrey Sidebottom: a working controlled-marketplace prototype, two product requirements documents, and conceptual analyst-assistant mockups. All demo organizations and listing content are fictional.
+Product design, technical implementation, and AI experimentation by Jeffrey Sidebottom. These personal work samples distinguish implemented behavior, conceptual designs, historical observations, and unvalidated hypotheses.
+
+## Choose a sample
+
+| Sample | Focus | What to explore |
+|---|---|---|
+| [Gemma: Building and Evaluating an Agent Team](projects/gemma/README.md) | Agent coordination, memory, routing, and experience | System decisions, architecture, selected code, and an offline walkthrough |
+| [Crucible: Experiments in Evolving AI-Agent Prompts](projects/crucible/README.md) | Mutation strategies, evaluation, and selection | A linked Gemma spin-off with complete prompt artifacts, recorded outcomes, and experimental lessons |
+| [Controlled Marketplace](marketplace/README.md) | Access control, product requirements, and interaction design | Working local prototype, PRD, technical specification, and verification |
+| [Analyst Assistant](PRD_Cyber_Analyst_Assistant.md) | AI-assisted analysis workflow | Product concept and annotated mockups |
+
+Gemma and Crucible were designed and directed by the author, with LLM-assisted code implementation. They include offline excerpts rather than live agent deployments. Marketplace demo organizations and listing content are fictional; Crucible's evidence is a reviewed historical extract.
 
 ## Run the marketplace
 
@@ -29,13 +40,15 @@ The analyst interface is conceptual. The marketplace is implemented with Python,
 ## Verify
 
 ```sh
+python3 -B -m unittest discover -s projects/gemma/tests -v
+python3 -B -m unittest discover -s projects/crucible/tests -v
 python3 -B -m unittest discover -s marketplace/tests -v
 node --check marketplace/static/app.js
 node --test marketplace/tests/test_ui.cjs
 python3 scripts/audit-secrets.py .
 ```
 
-The suite includes 18 service/HTTP-handler tests and five mocked UI regression checks. The separate browser runner uses disposable data; see [browser evidence and limitations](review/browser-qa-2026-11-14.md). Manual accessibility and user validation remain incomplete.
+The agent samples include six Gemma and seven Crucible checks. The marketplace suite includes 18 service/HTTP-handler tests and five mocked UI regression checks. The separate marketplace browser runner uses disposable data; see [browser evidence and limitations](review/browser-qa-2026-11-14.md). Manual accessibility and user validation remain incomplete. Each agent sample documents its own [Gemma](projects/gemma/verification.md) or [Crucible](projects/crucible/verification.md) verification boundaries.
 
 ## Hosting boundary
 
