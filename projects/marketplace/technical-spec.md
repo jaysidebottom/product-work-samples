@@ -5,7 +5,7 @@ This document describes the implemented local application and generic single-hos
 ## 1. Application contract and authorization
 
 
-`marketplace/app.py` serves only the homepage, app.js, style.css and `/api/marketplace`. GET views are context, mine, discover, detail and owner preview; POST actions are create, edit, access and demo reset. There is no item deletion, upload, messaging or payment API.
+`projects/marketplace/app.py` serves only the homepage, app.js, style.css and `/api/marketplace`. GET views are context, mine, discover, detail and owner preview; POST actions are create, edit, access and demo reset. There is no item deletion, upload, messaging or payment API.
 
 `project()` applies owner → same-role prohibition → explicit opposite-role grant → deny. The same allowlisted projection serves discovery, detail and preview. Unauthorized/missing items return the same 404. Only owners receive the grant roster. Search/count operate on authorized projections, and search covers title/category/summary even with Full details access. The context directory exposes fixed ID/name/role, not item existence or company content.
 
@@ -42,7 +42,7 @@ The deployment examples place a private HTTPS gateway and restricted reverse pro
 
 ## 4. Operations and verification limits
 
-SQLite backup and integrity checks are illustrated in [deployment examples](deploy/README.md). Backups on the same host are not independent disaster recovery. Restore verification, retained off-host generations, alert delivery, release rollback drills, monitoring and capacity planning must be established for a specific deployment; no SLA is claimed here.
+SQLite backup and integrity checks are illustrated in [deployment examples](../../deploy/README.md). Backups on the same host are not independent disaster recovery. Restore verification, retained off-host generations, alert delivery, release rollback drills, monitoring and capacity planning must be established for a specific deployment; no SLA is claimed here.
 
 The application emits content-free HTTP failure method/status events. Product analytics and a complete security audit trail are not implemented. There is no dedicated readiness endpoint.
 

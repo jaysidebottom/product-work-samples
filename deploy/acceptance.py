@@ -62,7 +62,7 @@ def check():
     print('Custom data persisted through service restart: PASS')
     print(remote('''runuser -u marketplace -- python3 - <<'INNER'
 import sqlite3,sys
-sys.path.insert(0,'/opt/marketplace/current/marketplace')
+sys.path.insert(0,'/opt/marketplace/current/projects/marketplace')
 from app import Store
 src='/var/lib/marketplace/acceptance.sqlite3'; dst='/var/lib/marketplace/acceptance-restored.sqlite3'
 with sqlite3.connect(src) as source, sqlite3.connect(dst) as target:
@@ -82,7 +82,7 @@ remote('''mkdir -p /etc/systemd/system/marketplace.service.d
 cat > /etc/systemd/system/marketplace.service.d/acceptance.conf <<'UNIT'
 [Service]
 ExecStart=
-ExecStart=/usr/bin/python3 -u /opt/marketplace/current/marketplace/app.py --host 127.0.0.1 --port 8766 --db /var/lib/marketplace/acceptance.sqlite3
+ExecStart=/usr/bin/python3 -u /opt/marketplace/current/projects/marketplace/app.py --host 127.0.0.1 --port 8766 --db /var/lib/marketplace/acceptance.sqlite3
 UNIT
 systemctl daemon-reload
 systemctl restart marketplace

@@ -11,7 +11,7 @@ def remote(command,data=None):
     return subprocess.check_output(SSH+[command],input=data)
 if git('status','--porcelain').strip():raise SystemExit('Release checkout must be clean')
 sha=git('rev-parse','HEAD').decode().strip()
-archive=git('archive','--format=tar',sha,'marketplace/app.py','marketplace/static','marketplace/tests','deploy/backup.py','deploy/marketplace.service','deploy/marketplace-backup.service','deploy/marketplace-backup.timer')
+archive=git('archive','--format=tar',sha,'projects/marketplace/app.py','projects/marketplace/static','projects/marketplace/tests','deploy/backup.py','deploy/marketplace.service','deploy/marketplace-backup.service','deploy/marketplace-backup.timer')
 remote('sudo test -f /etc/marketplace/private.env && sudo test -f /etc/systemd/system/caddy.service.d/private.conf')
 remote(f'sudo mkdir -p /opt/marketplace/releases/{sha} && sudo tar xf - -C /opt/marketplace/releases/{sha}',archive)
 script=f'''set -eu

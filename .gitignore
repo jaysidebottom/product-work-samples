@@ -10,8 +10,8 @@ __pycache__/
 deploy/private/
 .venv/
 node_modules/
-marketplace/data/
-marketplace/qa/captures/
+projects/marketplace/data/
+projects/marketplace/qa/captures/
 *.bundle
 *.sqlite3
 /private-notes/

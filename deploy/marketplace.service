@@ -10,7 +10,7 @@ Group=marketplace
 WorkingDirectory=/opt/marketplace/current
 EnvironmentFile=/etc/marketplace/private.env
 Environment=PYTHONDONTWRITEBYTECODE=1
-ExecStart=/usr/bin/python3 -u /opt/marketplace/current/marketplace/app.py --host 127.0.0.1 --port 8766 --db /var/lib/marketplace/marketplace.sqlite3
+ExecStart=/usr/bin/python3 -u /opt/marketplace/current/projects/marketplace/app.py --host 127.0.0.1 --port 8766 --db /var/lib/marketplace/marketplace.sqlite3
 Restart=on-failure
 RestartSec=3
 UMask=0077

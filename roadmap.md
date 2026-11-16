@@ -22,4 +22,16 @@ Read the PRDs for product decisions, the technical specification for implementat
 
 Review the tracked file set, run the secret audit and relevant tests, and inspect generated HTML before publishing. Keep credentials, local databases, backups, connection manifests and private records out of Git. Use this sanitized repository as the publication source; do not synchronize a private operating workspace wholesale.
 
-The published history begins with the sanitized portfolio snapshot. Prior operating history is retained only in a private local recovery archive. Repository visibility remains private unless explicitly changed by the owner.
+The repository history begins with a sanitized portfolio snapshot. Source operating history is not a publication input. Organizing these samples does not change repository visibility or deploy an application.
+
+## Portfolio organization
+
+Samples are grouped under `projects/`, each with an overview and paths to requirements, visuals, and evidence. Shared audit/build tools remain in `scripts/`; reference deployment examples remain in `deploy/`. All existing samples and assets are preserved.
+
+Checks from the repository root:
+
+```sh
+python3 -B -m unittest discover -s projects/marketplace/tests -v
+node --test projects/marketplace/tests/test_ui.cjs
+python3 scripts/audit-secrets.py .
+```

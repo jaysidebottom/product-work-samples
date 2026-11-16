@@ -22,6 +22,6 @@ Reference data lives at `/var/lib/marketplace/marketplace.sqlite3`, independentl
 
 ## Limits
 
-These examples do not establish production identity, a recovery SLA, delivered alerts, a tested load capacity or completed accessibility review. See the [technical specification](../TECH_SPEC_Marketplace.md).
+These examples do not establish production identity, a recovery SLA, delivered alerts, a tested load capacity or completed accessibility review. See the [technical specification](../projects/marketplace/technical-spec.md).
 
 Before publishing, run `python3 scripts/audit-secrets.py .`. Enable the commit guard with `git config core.hooksPath .githooks`. Exclude credentials, keys, private directories, local databases and backups.

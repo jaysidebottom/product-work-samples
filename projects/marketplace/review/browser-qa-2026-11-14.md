@@ -1,8 +1,8 @@
 # Local browser QA evidence — November 14, 2026
 
-The operator ran `python3 marketplace/qa/run-disposable.py` locally. The runner creates a separate temporary SQLite database and local server. The review inspected the resulting trace and all eleven fresh PNGs. No Playwright action errors or pageError events appear in the trace; execution reached the final buyer mobile preview and close action. The terminal exit code/stdout was not independently captured, so evidence is the completed trace and screenshots rather than an archived process-success report.
+The operator ran `python3 marketplace/qa/run-disposable.py` locally using the original repository layout. The current equivalent is `python3 projects/marketplace/qa/run-disposable.py`. The runner creates a separate temporary SQLite database and local server. The review inspected the resulting trace and all eleven fresh PNGs. No Playwright action errors or pageError events appear in the trace; execution reached the final buyer mobile preview and close action. The terminal exit code/stdout was not independently captured, so evidence is the completed trace and screenshots rather than an archived process-success report.
 
-Trace: `marketplace/qa/captures/browser-trace.zip` (ignored by Git).
+Trace: `projects/marketplace/qa/captures/browser-trace.zip` (ignored by Git).
 
 | Coverage | Evidence |
 |---|---|

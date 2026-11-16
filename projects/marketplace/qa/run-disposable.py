@@ -1,5 +1,5 @@
-"""Launch browser QA on a fresh temporary DB; never uses marketplace/data.
-Run: python3 marketplace/qa/run-disposable.py
+"""Launch browser QA on a fresh temporary DB; never uses projects/marketplace/data.
+Run: python3 projects/marketplace/qa/run-disposable.py
 Requires Node, Playwright and Chrome (see browser-check.mjs overrides).
 """
 import os

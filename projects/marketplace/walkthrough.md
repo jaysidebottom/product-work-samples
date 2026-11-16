@@ -1,6 +1,6 @@
 # Controlled Marketplace prototype
 
-A local prototype for buyers and sellers to selectively share needs and capabilities. Start with [local setup](../local-demo.md). Python 3.9+ and a modern browser are sufficient; the application has no package or external-service dependencies.
+A local prototype for buyers and sellers to selectively share needs and capabilities. Start with [local setup](local-demo.md). Python 3.9+ and a modern browser are sufficient; the application has no package or external-service dependencies.
 
 ## Walkthrough
 
@@ -24,14 +24,14 @@ Owner preview uses the same server-side projection as recipient reads. Saving a 
 ## Verification
 
 ```sh
-python3 -B -m unittest discover -s marketplace/tests -v
-node --test marketplace/tests/test_ui.cjs
+python3 -B -m unittest discover -s projects/marketplace/tests -v
+node --test projects/marketplace/tests/test_ui.cjs
 ```
 
 For real-browser checks, install Node and Playwright (`npm install --no-save --package-lock=false playwright`, then `npx playwright install chromium`). Run:
 
 ```sh
-python3 marketplace/qa/run-disposable.py
+python3 projects/marketplace/qa/run-disposable.py
 ```
 
 The runner creates a temporary database and loopback server. It never opens the presentation database. `PLAYWRIGHT_MODULE` can select an externally installed module; `CHROME_PATH` can select a browser executable. Otherwise Playwright uses its installed Chromium. Captures and traces are ignored by Git.
@@ -44,4 +44,4 @@ The account switcher and `X-Demo-Account` header allow selecting any fictional a
 
 SQLite preserves edits and grants across restarts. Untouched original fixtures may receive richer sample content; edited fixtures and grants are preserved. Unsaved forms survive focus refresh but not an explicit close, reload or account switch. Concurrent owner saves use last-write-wins behavior.
 
-See the [technical specification](../TECH_SPEC_Marketplace.md), [implementation audit](../review/marketplace-audit.md) and [browser evidence](../review/browser-qa-2026-11-14.md). Manual focus/keyboard/scrolled-mobile checks and customer validation remain incomplete.
+See the [technical specification](technical-spec.md), [implementation audit](review/marketplace-audit.md) and [browser evidence](review/browser-qa-2026-11-14.md). Manual focus/keyboard/scrolled-mobile checks and customer validation remain incomplete.

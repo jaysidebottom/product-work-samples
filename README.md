@@ -1,42 +1,36 @@
-# Controlled Marketplace and Analyst Assistant
+# Product Management Work Samples
 
-Product design and engineering examples by Jeffrey Sidebottom: a working controlled-marketplace prototype, two product requirements documents, and conceptual analyst-assistant mockups. All demo organizations and listing content are fictional.
+Product decisions, technical design, and working examples by Jeffrey Sidebottom.
 
-## Run the marketplace
+These personal work samples show how I frame a problem, translate it into requirements, and examine implementation trade-offs. Each distinguishes working behavior from concepts and proposed outcomes.
 
-Python 3.9+; no application dependencies or external accounts required.
+## Selected work
 
-```sh
-python3 marketplace/app.py
-```
+### [Controlled Marketplace](projects/marketplace/README.md)
+**Working local prototype · Product requirements · Access-control design**
 
-Open http://127.0.0.1:8766. The app creates a local SQLite database on first launch. Existing edits and grants survive refresh and restart. Use the account switcher to explore buyer and seller views. New items start private; the server enforces the selected account's access. The switcher demonstrates authorization, not production authentication.
+How can buyers and sellers share useful information while retaining control over who sees sensitive details? Explore private-by-default listings, tiered access, recipient previews, and revocation.
 
-See [local setup](local-demo.md) and the [walkthrough](marketplace/README.md). Reset is destructive to demo edits; use a separate disposable database for QA.
+[Read the case overview](projects/marketplace/README.md) · [See the screens](projects/marketplace/docs/screenshots/) · [Try the prototype](projects/marketplace/local-demo.md)
 
-## Explore the work
+### [Analyst Assistant](projects/analyst-assistant/README.md)
+**Product concept · Requirements · Four annotated interface mockups**
 
-- [Marketplace PRD](PRD_Controlled_Marketplace.md)
-- [Marketplace technical specification](TECH_SPEC_Marketplace.md)
-- [Analyst Assistant PRD](PRD_Cyber_Analyst_Assistant.md) and [model integration notes](review/analyst-model-integration.md)
-- [Standalone documents and screenshots](docs/README.md)
-- [Analyst mockup gallery](mockups/index.html)
-- [Implementation audit](review/marketplace-audit.md)
-- [Project status](roadmap.md)
+How could an AI-assisted analysis workflow make investigation plans, evidence, and uncertainty easier to review? Explore the proposed experience and the boundaries between the interface concept and model integration.
 
-The analyst interface is conceptual. The marketplace is implemented with Python, SQLite and plain HTML/CSS/JavaScript. Hypotheses and proposed metrics are not presented as validated customer research.
+[Read the case overview](projects/analyst-assistant/README.md) · [Explore the mockups](projects/analyst-assistant/mockups/README.md) · [Read the PRD](projects/analyst-assistant/prd.md)
 
-## Verify
+## Choose a reading path
 
-```sh
-python3 -B -m unittest discover -s marketplace/tests -v
-node --check marketplace/static/app.js
-node --test marketplace/tests/test_ui.cjs
-python3 scripts/audit-secrets.py .
-```
+| Interest | Start here | Go deeper |
+|---|---|---|
+| Product thinking | Project overviews above | Problem framing, requirements, and proposed success criteria in each PRD |
+| Technical design | [Marketplace architecture](projects/marketplace/technical-spec.md) | [Implementation audit](projects/marketplace/review/marketplace-audit.md) and [analyst model integration](projects/analyst-assistant/model-integration.md) |
+| Interaction design | [Marketplace screens](projects/marketplace/docs/screenshots/) | [Analyst mockups](projects/analyst-assistant/mockups/README.md) |
+| Hands-on review | [Local marketplace setup](projects/marketplace/local-demo.md) | [Walkthrough and verification](projects/marketplace/walkthrough.md) |
 
-The suite includes 18 service/HTTP-handler tests and five mocked UI regression checks. The separate browser runner uses disposable data; see [browser evidence and limitations](review/browser-qa-2026-11-14.md). Manual accessibility and user validation remain incomplete.
+## Scope and evidence
 
-## Hosting boundary
+The marketplace runs locally with Python, SQLite, and plain HTML/CSS/JavaScript. Its account switcher demonstrates authorization, not production authentication. All demo organizations and listing content are fictional. The analyst assistant is a concept, not a working analyst application. Proposed metrics are not validated customer outcomes.
 
-[Deployment examples](deploy/README.md) illustrate a private gateway and persistent single-host application. They require operator-provided configuration and contain no live addresses, account details or credentials. Running locally requires none of that infrastructure.
+[All project artifacts](projects/README.md) · [Verification and maintenance](roadmap.md) · [Reference deployment examples](deploy/README.md)
