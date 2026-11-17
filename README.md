@@ -1,10 +1,26 @@
-# Product Management Work Samples
+# Product Management Work Samples & Personal AI Projects
 
 Product decisions, technical design, and working examples by Jeffrey Sidebottom.
 
-These personal work samples show how I frame a problem, translate it into requirements, and examine implementation trade-offs. Each distinguishes working behavior from concepts and proposed outcomes.
+This portfolio contains two kinds of work: product management samples that demonstrate problem framing, requirements, interaction design, and implementation trade-offs; and independently initiated personal AI projects that explore agent coordination, memory, and evaluation. Gemma and Crucible are personal projects, separate from employer work. Each sample distinguishes implemented behavior from concepts, historical observations, and proposed outcomes.
 
-## Selected work
+## Personal AI Projects
+
+### [Gemma: Building and Evaluating an Agent Team](projects/gemma/README.md)
+**Historical implementation · Agent architecture · Offline examples**
+
+How can a developer coordinate specialist agents, retain useful context, and inspect their work? Explore task routing, memory layers, progression, and the distinction between activity and demonstrated capability.
+
+[Read the case study](projects/gemma/README.md) · [Explore the architecture](projects/gemma/architecture.md) · [Inspect the evidence](projects/gemma/verification.md)
+
+### [Crucible: Experiments in Evolving AI-Agent Prompts](projects/crucible/README.md)
+**Gemma spin-off · Experimental methodology · Historical evidence**
+
+Can systematic instruction changes produce repeatable improvements worth their evaluation cost? Explore competing mutation hypotheses, promotion criteria, and a preserved experiment with explicit limitations.
+
+[Read the case study](projects/crucible/README.md) · [Explore the method](projects/crucible/methodology.md) · [Inspect the experiment](projects/crucible/experiment.md)
+
+## Product Management Work Samples
 
 ### [Controlled Marketplace](projects/marketplace/README.md)
 **Working local prototype · Product requirements · Access-control design**
@@ -29,8 +45,12 @@ How could an AI-assisted analysis workflow make investigation plans, evidence, a
 | Interaction design | [Marketplace screens](projects/marketplace/docs/screenshots/) | [Analyst mockups](projects/analyst-assistant/mockups/README.md) |
 | Hands-on review | [Local marketplace setup](projects/marketplace/local-demo.md) | [Walkthrough and verification](projects/marketplace/walkthrough.md) |
 
+For agent-system design, follow [Gemma’s task and memory architecture](projects/gemma/architecture.md), then [Crucible’s evaluation methodology](projects/crucible/methodology.md) and [recorded experiment](projects/crucible/experiment.md).
+
 ## Scope and evidence
 
 The marketplace runs locally with Python, SQLite, and plain HTML/CSS/JavaScript. Its account switcher demonstrates authorization, not production authentication. All demo organizations and listing content are fictional. The analyst assistant is a concept, not a working analyst application. Proposed metrics are not validated customer outcomes.
+
+Gemma and Crucible were conceived, designed, and directed by the author, with LLM-assisted code implementation. Their offline examples and historical observations do not establish validated capability gains.
 
 [All project artifacts](projects/README.md) · [Verification and maintenance](roadmap.md) · [Reference deployment examples](deploy/README.md)

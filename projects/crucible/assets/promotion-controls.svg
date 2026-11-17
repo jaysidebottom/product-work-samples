@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="750" viewBox="0 0 1000 750" role="img" aria-labelledby="title desc"><title id="title">Crucible · Promotion and regression protection</title><desc id="desc">The later archived selection policy requires more than a favorable mean.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#64748b"/></marker></defs><rect width="1000" height="750" fill="#f8fafc"/><path d="M40 40h36" stroke="#0f766e" stroke-width="4"/>
+<text x="40" y="82" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="#0f172a">Crucible · Promotion and regression protection</text>
+<text x="40" y="114" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">The later archived selection policy requires more than a favorable mean.</text>
+<rect x="40" y="155" width="280" height="140" rx="12" fill="white" stroke="#cbd5e1"/><rect x="40" y="171" width="3" height="24" fill="#0f766e"/>
+<text x="58" y="181" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">01  EVIDENCE</text>
+<text x="58" y="210" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Valid comparison</text>
+<text x="58" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Use eligible capability results</text>
+<text x="58" y="262" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Report invalid runs separately</text>
+<rect x="360" y="155" width="280" height="165" rx="12" fill="white" stroke="#cbd5e1"/><rect x="360" y="171" width="3" height="24" fill="#0f766e"/>
+<text x="378" y="181" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">02  MAIN GATE</text>
+<text x="378" y="210" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Practical + statistical</text>
+<text x="378" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">One-sided Welch p &lt; 0.05</text>
+<text x="378" y="262" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Rounded Δ &gt; 0.02 specialist</text>
+<text x="378" y="286" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Rounded Δ &gt; 0.05 director</text>
+<rect x="680" y="155" width="280" height="165" rx="12" fill="white" stroke="#cbd5e1"/><rect x="680" y="171" width="3" height="24" fill="#0f766e"/>
+<text x="698" y="181" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">03  PROTECTION</text>
+<text x="698" y="210" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Regression checks</text>
+<text x="698" y="238" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Per-task floor: 50% of baseline</text>
+<text x="698" y="262" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Director acceptance: at least 0.5</text>
+<text x="698" y="286" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Missing results can be skipped</text>
+<path d="M320 225H356" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M640 225H676" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M820 320V375" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="680" y="380" width="280" height="125" rx="12" fill="white" stroke="#cbd5e1"/><rect x="680" y="396" width="3" height="24" fill="#0f766e"/>
+<text x="698" y="415" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Select greatest delta</text>
+<text x="698" y="443" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Choose among qualifying</text>
+<text x="698" y="467" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">candidates</text>
+<text x="698" y="491" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">No qualifier → retain baseline</text>
+<rect x="40" y="380" width="600" height="125" rx="12" fill="white" stroke="#cbd5e1"/><rect x="40" y="396" width="3" height="24" fill="#6d28d9"/>
+<text x="58" y="415" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Selective confirmation path</text>
+<text x="58" y="443" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Near miss: Δ ≥ 0.05, p ≤ 0.20, no recorded regression block.</text>
+<text x="58" y="467" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Add two candidate runs on the strongest-signal benchmark;</text>
+<text x="58" y="491" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">pool with earlier runs and compare with reused calibration.</text>
+<path d="M500 320V355H340V376" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<path d="M640 445H660V335H620V324" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<rect x="40" y="550" width="920" height="125" rx="10" fill="#eaf3f3"/>
+<text x="58" y="578" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#115e59">What these controls do not establish</text>
+<text x="58" y="605" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Adaptive confirmation is not independent held-out validation. Missing coverage is missing evidence.</text>
+<text x="58" y="628" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Gemma additionally used fresh trusted-core controls and reapplied its director veto after confirmation.</text>
+<text x="58" y="651" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">The archived formulas do not establish which gate caused the featured historical no-winner record.</text>
+<text x="40" y="728" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#64748b">HISTORICAL IMPLEMENTATION  /  CONCEPTUAL SUMMARY  /  NO VALIDATED CAPABILITY GAIN</text>
+</svg>

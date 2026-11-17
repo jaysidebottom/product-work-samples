@@ -1,0 +1,305 @@
+{
+  "description": "Reviewed historical extract. Values are recorded, not newly evaluated.",
+  "selection": "All breeding_run_completed events for the three listed variant IDs in the preserved audit file; baseline entries for every benchmark represented by those events.",
+  "baseline": {
+    "prompt_file": "baseline-prompt.md",
+    "sha256": "b581adae5dfa52cbb47e5666a646f3033479c862f903b03c7da5b6d8daf37db3",
+    "recorded_prompt_hash": "b581adae5dfa",
+    "calibrated_at": "2026-03-29T19:55:08.718333+00:00",
+    "model_target": {
+      "target_id": "anthropic/claude-haiku-4-5-cli",
+      "provider": "anthropic",
+      "plugin": "anthropic_cli",
+      "model_name": "claude-haiku-4-5",
+      "execution_mode": "cli_subscription",
+      "client": "claude_code",
+      "subscription_or_api": "subscription",
+      "usage_accounting_quality": "estimated_cli",
+      "storage_slug": "claude-haiku-4-5-cli"
+    },
+    "benchmarks": {
+      "breed-api-event-sourced-ledger": {
+        "acceptance_score": 0.38885000000000003,
+        "fitness": 0.2778,
+        "baseline_status": "trusted",
+        "tier": "core",
+        "runs": [
+          {
+            "acceptance_score": 0.3333,
+            "fitness": 0.2667,
+            "run_state": "failed"
+          },
+          {
+            "acceptance_score": 0.4444,
+            "fitness": 0.2889,
+            "run_state": "failed"
+          }
+        ]
+      },
+      "breed-api-middleware-pipeline": {
+        "acceptance_score": 0.3125,
+        "fitness": 0.2375,
+        "baseline_status": "trusted",
+        "tier": "core",
+        "runs": [
+          {
+            "acceptance_score": 0.25,
+            "fitness": 0.05,
+            "run_state": "failed"
+          },
+          {
+            "acceptance_score": 0.375,
+            "fitness": 0.425,
+            "run_state": "failed"
+          }
+        ]
+      }
+    }
+  },
+  "variants": [
+    {
+      "label": "exploit",
+      "prompt_file": "exploit-prompt.md",
+      "sha256": "783b94e5bfe4cc5daa241f1d603dfb499121fdaef473cfd472856a55f6990cd1",
+      "metadata": {
+        "variant_id": "mut-783b94e5-01",
+        "origin": "mutation",
+        "mutation_type": "pattern_substitution",
+        "mutation_role": "exploit",
+        "mechanism_category": "specificity",
+        "mutated_section": "## Your Role",
+        "mutation_phase": "exploration",
+        "section_targeting": "unmutated",
+        "section_potential": 1.0,
+        "section_stable": false,
+        "mutation_brief": {
+          "role": "exploit",
+          "target_failure_mode": "low_fitness",
+          "target_failure_evidence": "breed-api-middleware-pipeline: 0.237 fitness (low composite score)",
+          "target_benchmark_id": "breed-api-middleware-pipeline",
+          "target_section": "## Your Role",
+          "mechanism": "add domain-specific rules",
+          "hypothesis": "Directly addressing low_fitness on breed-api-middleware-pipeline by add domain-specific rules should raise acceptance/fitness",
+          "mutation_type": "pattern_substitution"
+        },
+        "diff_summary": "Exploit: pattern_substitution on '## Your Role' targeting low_fitness",
+        "created_at": "2026-03-30T10:41:56.428144+00:00"
+      }
+    },
+    {
+      "label": "contrast",
+      "prompt_file": "contrast-prompt.md",
+      "sha256": "a6e43e4faa4ca060cad05c600aafe8fe8826aaf68ea27adebacbcf8beef732f4",
+      "metadata": {
+        "variant_id": "mut-a6e43e4f-02",
+        "origin": "mutation",
+        "mutation_type": "pattern_substitution",
+        "mutation_role": "contrast",
+        "mechanism_category": "prioritization",
+        "mutated_section": "## Primary Languages & Frameworks",
+        "mutation_phase": "exploration",
+        "section_targeting": "unmutated",
+        "section_potential": 1.0,
+        "section_stable": false,
+        "mutation_brief": {
+          "role": "contrast",
+          "target_failure_mode": "low_fitness",
+          "target_failure_evidence": "breed-api-middleware-pipeline: 0.237 fitness (low composite score)",
+          "target_benchmark_id": "breed-api-middleware-pipeline",
+          "target_section": "## Primary Languages & Frameworks",
+          "mechanism": "reorder workflow steps",
+          "hypothesis": "Alternative approach to low_fitness: reorder workflow steps may outperform the exploit mechanism",
+          "mutation_type": "pattern_substitution"
+        },
+        "diversity_retries": 0,
+        "diff_summary": "Contrast: pattern_substitution on '## Primary Languages & Frameworks' targeting low_fitness",
+        "created_at": "2026-03-30T10:42:21.401421+00:00"
+      }
+    },
+    {
+      "label": "crossover",
+      "prompt_file": "crossover-prompt.md",
+      "sha256": "b581adae5dfa52cbb47e5666a646f3033479c862f903b03c7da5b6d8daf37db3",
+      "metadata": {
+        "variant_id": "cross-b581adae-03",
+        "origin": "crossover",
+        "mutation_role": "crossover_complementary",
+        "parents": [
+          "mut-783b94e5-01",
+          "mut-a6e43e4f-02"
+        ],
+        "swap_indices": [
+          5,
+          1
+        ],
+        "crossover_gating": "section_level",
+        "crossover_reason": "A mutated '## Your Role', B mutated '## Primary Languages & Frameworks' \u2014 section_level",
+        "diff_summary": "Crossover of A (## Your Role) + B (## Primary Languages & Frameworks)",
+        "created_at": "2026-03-30T10:42:21.403248+00:00"
+      }
+    }
+  ],
+  "recorded_evaluations": [
+    {
+      "timestamp": "2026-03-30T10:44:52.789184+00:00",
+      "variant_id": "mut-a6e43e4f-02",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.05,
+      "acceptance": 0.25
+    },
+    {
+      "timestamp": "2026-03-30T10:45:33.851037+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.585,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:48:13.923508+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.5,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:48:17.302198+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.53,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:48:22.926825+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.53,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:49:16.352365+00:00",
+      "variant_id": "mut-a6e43e4f-02",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.53,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:53:29.793982+00:00",
+      "variant_id": "mut-a6e43e4f-02",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.05,
+      "acceptance": 0.25
+    },
+    {
+      "timestamp": "2026-03-30T10:54:55.972877+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.05,
+      "acceptance": 0.25
+    },
+    {
+      "timestamp": "2026-03-30T10:57:38.459824+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.585,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:58:03.816863+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.505,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:58:13.429134+00:00",
+      "variant_id": "mut-a6e43e4f-02",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.54,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T10:59:12.235972+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-middleware-pipeline",
+      "fitness": 0.535,
+      "acceptance": 0.5
+    },
+    {
+      "timestamp": "2026-03-30T11:02:21.759776+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3739,
+      "acceptance": 0.4444
+    },
+    {
+      "timestamp": "2026-03-30T11:02:27.304044+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3739,
+      "acceptance": 0.4444
+    },
+    {
+      "timestamp": "2026-03-30T11:02:51.505812+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3939,
+      "acceptance": 0.4444
+    },
+    {
+      "timestamp": "2026-03-30T11:03:07.387688+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3939,
+      "acceptance": 0.4444
+    },
+    {
+      "timestamp": "2026-03-30T11:03:08.112014+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3589,
+      "acceptance": 0.4444
+    },
+    {
+      "timestamp": "2026-03-30T11:03:14.960985+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3739,
+      "acceptance": 0.4444
+    },
+    {
+      "timestamp": "2026-03-30T11:03:16.197160+00:00",
+      "variant_id": "cross-b581adae-03",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3739,
+      "acceptance": 0.4444
+    },
+    {
+      "timestamp": "2026-03-30T11:04:00.120604+00:00",
+      "variant_id": "mut-783b94e5-01",
+      "benchmark_id": "breed-api-event-sourced-ledger",
+      "fitness": 0.3939,
+      "acceptance": 0.4444
+    }
+  ],
+  "nearby_cycle_record": {
+    "timestamp": "2026-03-30T11:04:00.138454+00:00",
+    "agent": "agent-backend",
+    "cycle_id": "cycle-1",
+    "winner": null,
+    "fitness_delta": 0,
+    "variants_tested": 3,
+    "association": "Inferred from time and sequence; record has no model or variant IDs."
+  },
+  "limitations": [
+    "Candidate evaluation events do not contain model IDs, run indices, retry flags, or prompt hashes.",
+    "Model attribution comes from the preserved archive lineage, not each audit event.",
+    "Repeated events are counted as recorded evaluations, not guaranteed independent trials.",
+    "The cycle record does not provide a rejection reason or a candidate-specific statistical test.",
+    "No held-out improvement or general capability gain is established.",
+    "Full run workspaces and judge inputs are not included; recorded composite fitness is not recomputed."
+  ],
+  "artifact_check": {
+    "crossover_equals_baseline": true,
+    "interpretation": "The crossover metadata describes recombination, but the stored prompt is byte-identical to baseline. Treat its evaluations as repeated baseline-prompt observations, not evidence for a combined mutation."
+  }
+}

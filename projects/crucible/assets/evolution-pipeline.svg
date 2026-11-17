@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="840" viewBox="0 0 1000 840" role="img" aria-labelledby="title desc"><title id="title">Crucible · From a weakness to a decision</title><desc id="desc">Prompt evolution changes instruction text, not model weights.</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#64748b"/></marker></defs><rect width="1000" height="840" fill="#f8fafc"/><path d="M40 40h36" stroke="#0f766e" stroke-width="4"/>
+<text x="40" y="82" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="600" fill="#0f172a">Crucible · From a weakness to a decision</text>
+<text x="40" y="114" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Prompt evolution changes instruction text, not model weights.</text>
+<rect x="40" y="150" width="280" height="140" rx="12" fill="white" stroke="#cbd5e1"/><rect x="40" y="166" width="3" height="24" fill="#0f766e"/>
+<text x="58" y="176" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">01  HYPOTHESIS</text>
+<text x="58" y="205" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Diagnose</text>
+<text x="58" y="233" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Inspect failure and baseline data</text>
+<text x="58" y="257" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">State target, section, and</text>
+<text x="58" y="281" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">mechanism</text>
+<rect x="360" y="150" width="280" height="140" rx="12" fill="white" stroke="#cbd5e1"/><rect x="360" y="166" width="3" height="24" fill="#0f766e"/>
+<text x="378" y="176" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">02  VARIATION</text>
+<text x="378" y="205" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Generate alternatives</text>
+<text x="378" y="233" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Exploit and contrast mutations</text>
+<text x="378" y="257" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Crossover or deletion candidate</text>
+<rect x="680" y="150" width="280" height="140" rx="12" fill="white" stroke="#cbd5e1"/><rect x="680" y="166" width="3" height="24" fill="#0f766e"/>
+<text x="698" y="176" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">03  INTEGRITY</text>
+<text x="698" y="205" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Validate artifacts</text>
+<text x="698" y="233" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Structure, repetition, growth limits</text>
+<text x="698" y="257" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Store variants and prompt identity</text>
+<path d="M320 220H356" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M640 220H676" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M820 290V335" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<rect x="680" y="340" width="280" height="140" rx="12" fill="white" stroke="#cbd5e1"/><rect x="680" y="356" width="3" height="24" fill="#0f766e"/>
+<text x="698" y="366" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">04  MEASURE</text>
+<text x="698" y="395" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Evaluate</text>
+<text x="698" y="423" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Benchmark acceptance + fitness</text>
+<text x="698" y="447" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Classify valid runs and failures</text>
+<rect x="360" y="340" width="280" height="140" rx="12" fill="white" stroke="#cbd5e1"/><rect x="360" y="356" width="3" height="24" fill="#0f766e"/>
+<text x="378" y="366" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">05  COMPARE</text>
+<text x="378" y="395" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Apply selection gates</text>
+<text x="378" y="423" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Practical delta + one-sided Welch</text>
+<text x="378" y="447" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Applicable regression controls</text>
+<rect x="40" y="340" width="280" height="140" rx="12" fill="white" stroke="#cbd5e1"/><rect x="40" y="356" width="3" height="24" fill="#0f766e"/>
+<text x="58" y="366" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">06  SELECT</text>
+<text x="58" y="395" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Record the decision</text>
+<text x="58" y="423" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Qualifies → promote instructions</text>
+<text x="58" y="447" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Otherwise → keep incumbent</text>
+<path d="M680 410H644" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M360 410H324" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M180 340V294" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<path d="M820 480V515H20V130H180V146" fill="none" stroke="#64748b" stroke-width="1.6" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<text x="370" y="539" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#475569">Evaluation and operator history inform the next hypothesis</text>
+<rect x="40" y="565" width="440" height="130" rx="12" fill="white" stroke="#cbd5e1"/><rect x="40" y="581" width="3" height="24" fill="#0f766e"/>
+<text x="58" y="591" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#0f766e">VERSION DISTINCTION</text>
+<text x="58" y="620" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Gemma: fresh cycle control</text>
+<text x="58" y="648" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Initial calibration may be reused.</text>
+<text x="58" y="672" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Incumbent runs alongside candidates each cycle.</text>
+<rect x="520" y="565" width="440" height="130" rx="12" fill="white" stroke="#cbd5e1"/><rect x="520" y="581" width="3" height="24" fill="#6d28d9"/>
+<text x="538" y="591" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#6d28d9">VERSION DISTINCTION</text>
+<text x="538" y="620" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Later Crucible: reused control</text>
+<text x="538" y="648" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Candidates run against stored calibration scores.</text>
+<text x="538" y="672" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#475569">Prompt identity alone cannot establish stability.</text>
+<text x="40" y="741" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#475569">Later archived machinery is not a version-pinned reconstruction of the March experiment.</text>
+<text x="40" y="770" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#475569">No independent held-out promotion gate was implemented. Final artifact identity still needs scrutiny.</text>
+<text x="40" y="818" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="600" fill="#64748b">HISTORICAL IMPLEMENTATION  /  CONCEPTUAL SUMMARY  /  NO VALIDATED CAPABILITY GAIN</text>
+</svg>
