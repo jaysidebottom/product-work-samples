@@ -173,6 +173,8 @@ Planned instrumentation (not implemented): item creation, visibility edit/save/r
 
 **Validation pending:** Complete physical OS-focus return, keyboard traversal/trap/restoration and scrolled mobile visual checks; evaluate whether users can configure and predict visibility correctly. Existing trace evidence covers automated refresh/account switching and responsive widths. No user-study results are claimed.
 
+Post-review note (November 21, 2026) — Discovery as the directory grows. An owner who wants to reach every eligible counterparty must revisit each item’s grants as new organizations join. Before a broader rollout, validate how often buyers and sellers need that reach. Evaluate two distinct choices: a one-time grant to all current counterparties, and an explicit opt-in grant that also includes future verified counterparties. In either case, the owner chooses Summary or Full Details. Test whether owners can accurately predict what a newly onboarded organization would see.
+
 ## Appendix A Working prototype and implementation
 
 The prototype uses a small application with server-side authorization and persistent local data. The server resolves the active account, checks ownership/role/grant on every read and mutation, and returns only the allowed field projection. The same policy serves discovery, detail, and owner preview to avoid conflicting interpretations. Authorized records are filtered before calculating counts or search results.
