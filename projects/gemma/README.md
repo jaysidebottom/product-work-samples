@@ -68,6 +68,10 @@ It selects between fictional agents, shows how a busy-agent penalty changes rout
 
 The linked Gemma and Crucible work stalled under the usage and cost of breeding cycles and the time needed to keep refining benchmarks and baseline formulas. The remaining technical questions were unfinished experimental work, not a conclusion that the approach could not succeed.
 
+## Credits and influences
+
+Gemma used Vectorize’s Hindsight to store and retrieve agent memories. OpenViking’s approach to loading context in tiers informed how Gemma chose between a short memory summary and a more detailed record. [Hindsight](https://github.com/vectorize-io/hindsight) · [OpenViking](https://github.com/volcengine/OpenViking)
+
 ## Explore
 
 - [Architecture and task lifecycle](architecture.md)

@@ -55,6 +55,12 @@ The exploit candidate had higher recorded mean acceptance on the targeted middle
 
 Breeding usage and costs became unsustainable for continued personal experimentation. Continuing also required substantial time to refine the benchmarks and baseline formulas. Those resource constraints stalled the work. The evaluation findings describe questions still being investigated; they were not a finding that the underlying approach could not work.
 
+## Credits and influences
+
+NVIDIA’s Nemotron 3 research informed Crucible’s checks for repetitive prompt mutations. NVIDIA BioNeMo inspired the design of promotion criteria and adaptive mutation scheduling. [Nemotron 3](https://research.nvidia.com/labs/nemotron/Nemotron-3/) · [BioNeMo](https://github.com/NVIDIA/BioNeMo-Framework)
+
+Andrej Karpathy’s autoresearch influenced how Crucible organized repeated experiments and screened candidates before promotion. The retrospective also discusses the limits of single-run evaluations on SWE-bench. The featured experiment used project-specific middleware and ledger tasks. [autoresearch](https://github.com/karpathy/autoresearch) · [SWE-bench](https://www.swebench.com/)
+
 ## Inspect the work
 
 1. [Mutation science, scoring formulas, and benchmark design](methodology.md)
