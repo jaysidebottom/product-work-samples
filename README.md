@@ -54,3 +54,5 @@ The marketplace runs locally with Python, SQLite, and plain HTML/CSS/JavaScript.
 Gemma and Crucible were conceived, designed, and directed by the author, with LLM-assisted code implementation. Their offline examples and historical observations do not establish validated capability gains.
 
 [All project artifacts](projects/README.md) · [Verification and maintenance](roadmap.md) · [Reference deployment examples](deploy/README.md)
+
+**Contact** · Jeff Sidebottom · [jeffssidebottom@gmail.com](mailto:jeffssidebottom+portfolio@gmail.com)
